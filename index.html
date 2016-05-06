@@ -13,6 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">Pyzza</h1>
       <h2 class="project-tagline">making a pizza with tkinter</h2>
+      <a href="https://github.com/JohnReeves/pyzza" class="btn">View on GitHub</a>
+      <a href="https://github.com/JohnReeves/pyzza/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JohnReeves/pyzza/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -85,7 +88,7 @@ window.mainloop()</pre></div>
 <hr>
 
 <h2>
-<a id="task-3---add-a-base-for-the-pyzza" class="anchor" href="#task-3---add-a-base-for-the-pyzza" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - add a base for the pyzza</h2>
+<a id="task-4---add-a-base-for-the-pyzza" class="anchor" href="#task-4---add-a-base-for-the-pyzza" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4 - add a base for the pyzza</h2>
 
 <ul>
 <li>Let's start by making the base
@@ -114,16 +117,30 @@ window.mainloop()</pre></div>
 <hr>
 
 <h2>
-<a id="task-4---put-all-the-toppings-on" class="anchor" href="#task-4---put-all-the-toppings-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4 - put all the toppings on</h2>
+<a id="task-5---put-all-the-toppings-on" class="anchor" href="#task-5---put-all-the-toppings-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 5 - put all the toppings on</h2>
 
 <ul>
-<li>look up what other toppings, we can have more shapes and colours
+<li>
+<p>look up what other toppings, we can have more shapes and colours</p>
 
 <ul>
 <li><a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html</a></li>
 </ul>
 </li>
+<li><p>we can also add them in random places, try this for pepperoni!</p></li>
 </ul>
+
+<div class="highlight highlight-source-python"><pre>colours <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>orange<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>yellow<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>purple<span class="pl-pds">"</span></span>]
+
+<span class="pl-c"># create some pepperoni - random 3 places</span>
+<span class="pl-k">for</span> x <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>,<span class="pl-c1">15</span>):
+    rndX <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>,<span class="pl-c1">600</span>)
+    rndY <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>,<span class="pl-c1">400</span>)
+    rndCol <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>, (<span class="pl-c1">len</span>(colours)<span class="pl-k">-</span><span class="pl-c1">1</span>))
+    canvas.create_oval(rndX,rndY,rndX<span class="pl-k">+</span><span class="pl-c1">50</span>,rndY<span class="pl-k">+</span><span class="pl-c1">50</span>,<span class="pl-v">fill</span><span class="pl-k">=</span>colours[rndCol])
+</pre></div>
+
+<p>Pro Tip - put the drawing things all together and change the magic numbers for variables</p>
 
 <hr>
 
