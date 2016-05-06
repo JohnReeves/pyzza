@@ -1,7 +1,5 @@
 #Python Pyzza worksheet
 
-![alt text](http://i.imgur.com/GwVqsqt.png "final image")
-
 ##Task 1 - install spyder
 
 * google for the Spyder Python IDE website
@@ -52,7 +50,7 @@ window.mainloop()
 
 ***
 
-##Task 3 - add a base for the pyzza
+##Task 4 - add a base for the pyzza
 
 * Let's start by making the base
   * Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right
@@ -72,10 +70,26 @@ canvas.create_oval(65,65,435,435,fill="red")
 
 ***
 
-##Task 4 - put all the toppings on
+##Task 5 - put all the toppings on
 
 * look up what other toppings, we can have more shapes and colours
   * http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html
+
+* we can also add them in random places, try this for pepperoni!
+
+```python
+colours = ["red", "orange", "yellow", "green", "blue", "purple"]
+
+# create some pepperoni - random 3 places
+for x in range(0,15):
+    rndX = randint(0,600)
+    rndY = randint(0,400)
+    rndCol = randint(0, (len(colours)-1))
+    canvas.create_oval(rndX,rndY,rndX+50,rndY+50,fill=colours[rndCol])
+
+```
+
+Pro Tip - put the drawing things all together and change the magic numbers for variables
 
 ***
 
