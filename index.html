@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pyzza by JohnReeves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Pyzza</h1>
+      <h2 class="project-tagline">making a pizza with tkinter</h2>
+      <a href="https://github.com/JohnReeves/pyzza" class="btn">View on GitHub</a>
+      <a href="https://github.com/JohnReeves/pyzza/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JohnReeves/pyzza/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="python-pyzza-worksheet" class="anchor" href="#python-pyzza-worksheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python Pyzza worksheet</h1>
+
+<p><img src="http://i.imgur.com/GwVqsqt.png" alt="alt text" title="final image"></p>
+
+<h2>
+<a id="task-1---install-spyder" class="anchor" href="#task-1---install-spyder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1 - install spyder</h2>
+
+<ul>
+<li>google for the Spyder Python IDE website</li>
+<li>open <a href="https://pythonhosted.org/spyder/installation.html">Spyder</a> in a new tab (preferably using Google Chrome)</li>
+<li>download and install Spyder</li>
+</ul>
+
+<p>Pro Tip - some graphical IDEs interfere with the python environment graphical IDEs, so if one doesn't work, try another</p>
+
+<h2>
+<a id="task-2---create-a-new-python-module" class="anchor" href="#task-2---create-a-new-python-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2 - create a new python module</h2>
+
+<ul>
+<li>press create new python module in the Spyder tab (top left)</li>
+<li>pay attention to the 4 step process of making a graphics app</li>
+</ul>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c">#import libraries</span>
+<span class="pl-k">from</span> Tkinter <span class="pl-k">import</span> <span class="pl-k">*</span>
+<span class="pl-k">from</span> random <span class="pl-k">import</span> randint
+
+<span class="pl-c"># step 1: create the top level Tk object</span>
+window<span class="pl-k">=</span>Tk()
+window.title(<span class="pl-s"><span class="pl-pds">"</span>a window<span class="pl-pds">"</span></span>)
+
+<span class="pl-c"># step 2: create the canvas</span>
+<span class="pl-c"># pizza things will go here</span>
+
+<span class="pl-c"># step 3: draw stuff on the canvas</span>
+<span class="pl-c"># base</span>
+canvas.create_oval(<span class="pl-c1">200</span>,<span class="pl-c1">200</span>,<span class="pl-c1">300</span>,<span class="pl-c1">300</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)
+
+<span class="pl-c"># Step 4: pack the canvas and run the Tk mainloop</span>
+canvas.pack()
+
+window.mainloop()</pre></div>
+
+<hr>
+
+<h2>
+<a id="task-3---run-and-save-your-work" class="anchor" href="#task-3---run-and-save-your-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - run and save your work</h2>
+
+<ul>
+<li>
+<p>click <em>run</em> at the top left - did you get what you expected?</p>
+
+<ul>
+<li>press this every time you want to see what your code does </li>
+<li>this should then appear in modal form labelled 'Tk'</li>
+</ul>
+</li>
+<li>
+<p>click <em>save</em> at the top left - no URL this time :/</p>
+
+<ul>
+<li>the first time you will need to give a file name</li>
+<li>save the file to a memory stick if you need to transport it</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="task-3---add-a-base-for-the-pyzza" class="anchor" href="#task-3---add-a-base-for-the-pyzza" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - add a base for the pyzza</h2>
+
+<ul>
+<li>Let's start by making the base
+
+<ul>
+<li>Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">50</span>,<span class="pl-c1">50</span>,<span class="pl-c1">450</span>,<span class="pl-c1">450</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)
+</pre></div>
+
+<ul>
+<li>Let's start by putting tomato sauce on the base
+
+<ul>
+<li>Note - there is no opacity in a tk canvas</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">65</span>,<span class="pl-c1">65</span>,<span class="pl-c1">435</span>,<span class="pl-c1">435</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>)
+</pre></div>
+
+<hr>
+
+<h2>
+<a id="task-4---put-all-the-toppings-on" class="anchor" href="#task-4---put-all-the-toppings-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4 - put all the toppings on</h2>
+
+<ul>
+<li>look up what other toppings, we can have more shapes and colours
+
+<ul>
+<li><a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html</a></li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<p>Remember to save your file and put it on a memory stick - we will be animating our pyzza next week!</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/JohnReeves/pyzza">Pyzza</a> is maintained by <a href="https://github.com/JohnReeves">JohnReeves</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
