@@ -28,29 +28,32 @@ It is useful to try all of them to find out which you prefer.
 Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
 
 You already know about ```classes``` and ```objects```, just not in a programming sense: 
-  * *you* are an instance of the class `boy` or of the class `girl`, 
-  * *you* come with a bunch of attributes that you can do just like every other boy or girl, 
-  * *you* have attributes special to you - called ```overriding```.
+* *you* are an instance of the class `boy` or of the class `girl`, 
+* *you* come with a bunch of attributes that you can do just like every other boy or girl, 
+* *you* have attributes special to you - called ```overriding```.
+  * an object is an instance of a class, where an class is some sort of abstraction of a category of things!
 
-* an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
-
-**You have spent all your life writing and have expectations about what 'strings' can do. **
+**You have spent all your life writing and have expectations about what Python strings can do.**
 
 So, let's play with your name:
 
-```name = "your name"```
+```name = "your name"
+```
 
 **```"your name"``` is a string that we have labelled ```name```**
 
 as a string object, it comes with methods and attributes:
-```"your name".capitalize()```
+```"your name".capitalize()
+```
 
 gives the same result as 
-```name.capitalize()```
+```name.capitalize()
+```
 
-you can also count letters:
+You can also count letters:
 
-```len("your name")```
+```len("your name")
+```
 
 or talk about the n'th character:
 
