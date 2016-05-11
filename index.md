@@ -37,22 +37,26 @@ You already know about ```classes``` and ```objects```, just not in a programmin
 
 So, let's play with your name:
 
-```name = "your name"
+```
+name = "your name"
 ```
 
 **```"your name"``` is a string that we have labelled ```name```**
 
 as a string object, it comes with methods and attributes:
-```"your name".capitalize()
+```
+"your name".capitalize()
 ```
 
 gives the same result as 
-```name.capitalize()
+```
+name.capitalize()
 ```
 
 You can also count letters:
 
-```len("your name")
+```
+len("your name")
 ```
 
 or talk about the n'th character:
@@ -74,62 +78,58 @@ but what does ```"your name"[::-1]``` do?
 # so, things in python have behaviour defined by Python itself, perhaps by the package it belongs to, and by programs that you write.
 
 
-##Task 4 - A graphics app
+##Task 3 - A graphics app
 
-* There are lots of graphics packages for python, Tkinter is one of the oldest. The name 'Tkinter' is the python interface to Tk, a cross-platform graphics toolkit, embedded in many applications, from engineering and design to office applications.
+There are lots of graphics packages for python, 
+* Tkinter is one of the oldest. 
+* The name ```Tkinter``` is the python interface to Tk, a cross-platform graphics toolkit, embedded in many applications, from engineering and design to office applications.
 
-* you can use Tkinter to make office forms or do something exciting, and there is always a basic template for making a graphics app:
+* *This is a basic Tkinter template for making a graphics app:**
+  * import the libraries
+  * create the top level object
+  * attach a canvas
+  * draw things
+  * pack the canvas
+  * run the mainloop
 
-** import the libraries
-** create the top level object
-** attach a canvas
-** draw things
-** pack the canvas
-** run the mainloop
-
-* some of the steps may be hidden by the package, but it is useful to keep remembering the basic template
+**ome of the steps may be hidden by the package, but it is useful to keep remembering the basic template**
 
 ```python
 # import libraries
 from Tkinter import * 
 ```
-
-# create the top level Tk object
 ```python
+# create the top level Tk object
 window=Tk()
 window.title("a window")
 ```
-
-# create the canvas
 ```python
-canvas = Canvas(window, 600,600)
+# create the canvas
+canvas = Canvas(window, height=600, width=600)
 ```
 
-* pizza things will go here
+```python
+# pizza things will go here
 
 # draw stuff on the canvas
-
-```python
 canvas.create_oval(200,200,300,300,fill="brown")
+
+# this might be the base of the pizza
 ```
 
-* this might be the base of the pizza
-
-# pack the canvas and run the Tk mainloop
 ```python
+# pack the canvas and run the Tk mainloop
 canvas.pack()
 window.mainloop()
 ```
 
-# draw some more stuff
-
 ```python
+# draw some more stuff
 canvas.create_oval(200,200,300,300,fill="brown")
+
+# this might be the tomato sauce toppings
+# now add your cheese and anything else, before we get to the pepperoni
 ```
-
-* this might be the tomato sauce toppings
-* now add your cheese and anything else, before we get to the pepperoni
-
 
 ***
 
