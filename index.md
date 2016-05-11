@@ -3,8 +3,8 @@
 ##Task 1 - Why Python?
 
 * one of the top two languages in the world, javascript for the front end, python for everythng else. 
-* it is used for engineering design, webservers, image processing, games design, office applications
-* our safety critical project is 1.08 million lines of a code, we have 3 or 4 times that in Python to make sure it is safe!
+** it is used for engineering design, webservers, image processing, games design, office applications
+** our safety critical project is 1.08 million lines of a code, we have 3 or 4 times that in Python to make sure it is safe!
 
 Python can be run from the command line, from an desktop IDE, or from an online IDE. It is useful to try all of them to find out which you prefer.
 
@@ -26,14 +26,17 @@ Python is now running!
 Everything in Python is an ```object```, with a uniform interface built into the language definition. Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
 
 * you already know about classes and objects, just not in a programming sense: 
-* an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
-* *you* are an instance of the class `boy` or of the class `girl`. 
-* *you* come with a bunch of attributes that you can do just like every other boy or girl, and then there are attributes special to you - which they call ```overriding```.
+** an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
+** *you* are an instance of the class `boy` or of the class `girl`. 
+** *you* come with a bunch of attributes that you can do just like every other boy or girl, and then there are attributes special to you - which they call ```overriding```.
 
 You have spent all your life writing and have expectations about what 'strings' can do. So, let's play with your name:
 
+```python
 name = "your name"
-"your name" is a string that we have labelled ```name``` 
+```
+
+* "your name" is a string that we have labelled ```name``` 
 
 as a string object, it comes with methods and attributes:
 ```"your name".capitalize()```
@@ -47,18 +50,18 @@ you can also count letters:
 
 or talk about the n'th character:
 
-```"your name"[3]
+```"your name"[3]```
 
 array indexing is interesting in python, so you can do this:
 
-```"your name"[0:3:1]
+```"your name"[0:3:1]```
 
 where:
 * 0 is the start
 * 3 is the end
 * 1 is the step length
 
-but what does ```"your name"[::-1] do?
+but what does ```"your name"[::-1]``` do?
 
 
 # so, things in python have behaviour defined by Python itself, perhaps by the package it belongs to, and by programs that you write.
@@ -81,35 +84,41 @@ but what does ```"your name"[::-1] do?
 
 ```python
 # import libraries
-from Tkinter import * ```
+from Tkinter import * 
+```
 
 # create the top level Tk object
 ```python
 window=Tk()
-window.title("a window")```
+window.title("a window")
+```
 
 # create the canvas
 ```python
-canvas = Canvas(window, 600,600)```
+canvas = Canvas(window, 600,600)
+```
 
 * pizza things will go here
 
 # draw stuff on the canvas
 
 ```python
-canvas.create_oval(200,200,300,300,fill="brown")```
+canvas.create_oval(200,200,300,300,fill="brown")
+```
 
 * this might be the base of the pizza
 
 # pack the canvas and run the Tk mainloop
 ```python
 canvas.pack()
-window.mainloop()```
+window.mainloop()
+```
 
 # draw some more stuff
 
 ```python
-canvas.create_oval(200,200,300,300,fill="brown")```
+canvas.create_oval(200,200,300,300,fill="brown")
+```
 
 * this might be the tomato sauce toppings
 * now add your cheese and anything else, before we get to the pepperoni
