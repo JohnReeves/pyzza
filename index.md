@@ -2,41 +2,44 @@
 
 ##Task 1 - Why Python?
 
-* one of the top two languages in the world, javascript for the front end, python for everythng else. 
-** it is used for engineering design, webservers, image processing, games design, office applications
-** our safety critical project is 1.08 million lines of a code, we have 3 or 4 times that in Python to make sure it is safe!
+* one of the top two languages in the world, javascript for the web 'front end', python for everything else (almost). 
+  * it is used by NASA, Google, Gimp, Minecraft, and Microsoft Office. 
+* a safety critical project may have a million lines of a C or Ada, and 3 million lines of Python to make sure it is safe!
 
-Python can be run from the command line, from an desktop IDE, or from an online IDE. It is useful to try all of them to find out which you prefer.
+Python can be run from the command line, from an desktop IDE, or from an online IDE. 
 
-* start a command line prompt using ```cmd```
+It is useful to try all of them to find out which you prefer.
 
-You can find out the version of python by typing ```python --version```.
+**Start a command line prompt using ```cmd```**
 
-2.7.x means you have Python 2 installed
+* You can find out the version of python by typing ```python --version```.
+  * 2.7.x means you have Python 2 installed
+  * 3.5.x means you have Python 3 installed
 
-3.5.x means you have Python 3 installed
+**Type ```python``` to give the ```>>>``` prompt**
 
-* type ```python``` to give the ```>>>``` prompt
-
-Python is now running!
+* Python is now running!
 
 
 ##Task 2 - Batteries included
 
 Everything in Python is an ```object```, with a uniform interface built into the language definition. Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
 
-* you already know about classes and objects, just not in a programming sense: 
-** an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
-** *you* are an instance of the class `boy` or of the class `girl`. 
-** *you* come with a bunch of attributes that you can do just like every other boy or girl, and then there are attributes special to you - which they call ```overriding```.
+You already know about classes and objects, just not in a programming sense: 
+* an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
+  * *you* are an instance of the class `boy` or of the class `girl`. 
+  * *you* come with a bunch of attributes that you can do just like every other boy or girl, 
+  * and then there are attributes special to you - which they call ```overriding```.
 
-You have spent all your life writing and have expectations about what 'strings' can do. So, let's play with your name:
+**You have spent all your life writing and have expectations about what 'strings' can do. **
+
+So, let's play with your name:
 
 ```python
 name = "your name"
 ```
 
-* "your name" is a string that we have labelled ```name``` 
+**```"your name"``` is a string that we have labelled ```name```**
 
 as a string object, it comes with methods and attributes:
 ```"your name".capitalize()```
