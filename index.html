@@ -13,55 +13,178 @@
     <section class="page-header">
       <h1 class="project-name">Pyzza</h1>
       <h2 class="project-tagline">making a pizza with tkinter</h2>
+      <a href="https://github.com/JohnReeves/pyzza" class="btn">View on GitHub</a>
+      <a href="https://github.com/JohnReeves/pyzza/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JohnReeves/pyzza/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
       <h1>
-<a id="python-pyzza-worksheet" class="anchor" href="#python-pyzza-worksheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a></h1>
-
-<h2>
-<a id="task-1---install-spyder" class="anchor" href="#task-1---install-spyder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1 - install spyder</h2>
-
-<ul>
-<li>google for the Spyder Python IDE website</li>
-<li>open <a href="https://pythonhosted.org/spyder/installation.html">Spyder</a> in a new tab (preferably using Google Chrome)</li>
-<li>download and install Spyder</li>
-</ul>
-
-<p>Pro Tip - some graphical IDEs interfere with the python environment graphical IDEs, so if one doesn't work, try another</p>
-
-<h2>
-<a id="task-2---create-a-new-python-module" class="anchor" href="#task-2---create-a-new-python-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2 - create a new python module</h2>
-
-<ul>
-<li>press create new python module in the Spyder tab (top left)</li>
-<li>pay attention to the 4 step process of making a graphics app</li>
-</ul>
-
-<div class="highlight highlight-source-python"><pre><span class="pl-c">#import libraries</span>
-<span class="pl-k">from</span> Tkinter <span class="pl-k">import</span> <span class="pl-k">*</span>
-<span class="pl-k">from</span> random <span class="pl-k">import</span> randint
-
-<span class="pl-c"># step 1: create the top level Tk object</span>
-canvas<span class="pl-k">=</span>Tk()
-canvas.title(<span class="pl-s"><span class="pl-pds">"</span>a window<span class="pl-pds">"</span></span>)
-
-<span class="pl-c"># step 2: create the canvas</span>
-<span class="pl-c"># pizza things will go here</span>
-
-<span class="pl-c"># step 3: draw stuff on the canvas</span>
-<span class="pl-c"># base</span>
-canvas.create_oval(<span class="pl-c1">200</span>,<span class="pl-c1">200</span>,<span class="pl-c1">300</span>,<span class="pl-c1">300</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)
-
-<span class="pl-c"># Step 4: pack the canvas and run the Tk mainloop</span>
-canvas.pack()
-
-canvas.mainloop()</pre></div>
+<a id="python-pizza-worksheet" class="anchor" href="#python-pizza-worksheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python Pizza worksheet</h1>
 
 <hr>
 
 <h2>
-<a id="task-3---run-and-save-your-work" class="anchor" href="#task-3---run-and-save-your-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - run and save your work</h2>
+<a id="task-1---why-python" class="anchor" href="#task-1---why-python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1 - Why Python?</h2>
+
+<ul>
+<li>one of the top two languages in the world, javascript for the web 'front end', python for everything else (almost). 
+
+<ul>
+<li>it is used by NASA, Google, Gimp, Minecraft, and Microsoft Office. </li>
+</ul>
+</li>
+<li>my project has a million lines of Ada &amp; C, and 3 million lines of Python to prove it!</li>
+</ul>
+
+<p><strong>Python can be run from the command line, from an desktop IDE, or from an online IDE</strong> </p>
+
+<p>It is useful to try all of them to find out which you prefer.</p>
+
+<p><strong>Start a command line prompt using <code>cmd</code></strong></p>
+
+<ul>
+<li>You can find out the version of python by typing <code>python --version</code>.
+
+<ul>
+<li>2.7.x means you have Python 2 installed</li>
+<li>3.5.x means you have Python 3 installed</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Type <code>python</code> to give the <code>&gt;&gt;&gt;</code> prompt</strong></p>
+
+<ul>
+<li>Python is now running!</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="task-2---batteries-included" class="anchor" href="#task-2---batteries-included" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2 - Batteries included</h2>
+
+<p><strong>Everything in Python is an <code>object</code>, with a uniform interface.</strong></p>
+
+<p>Which means everything you make comes with functions built in, and anything you might like to try probably has a library to help.</p>
+
+<p>You already know about <code>classes</code> and <code>objects</code>, just not in a programming sense: </p>
+
+<ul>
+<li>
+<em>you</em> are an instance of the class <code>boy</code> or of the class <code>girl</code>, </li>
+<li>
+<em>you</em> come with a bunch of attributes that you can do just like every other boy or girl, </li>
+<li>and <em>you</em> have attributes special to you - called <code>overriding</code>.
+
+<ul>
+<li>an object is an instance of a class, where an class is some sort of abstraction of a category of things!</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>You have spent all your school life writing and so have expectations about what character strings can do.</strong></p>
+
+<p>Let's play with your name:</p>
+
+<pre><code>name = "your name"
+</code></pre>
+
+<p><strong><code>"your name"</code> is a string that we have labelled <code>name</code></strong></p>
+
+<p>As a string object, it comes with methods and attributes:</p>
+
+<pre><code>"your name".capitalize()
+</code></pre>
+
+<p>Gives the same result as </p>
+
+<pre><code>name.capitalize()
+</code></pre>
+
+<p>You can also count letters:</p>
+
+<pre><code>len("your name")
+</code></pre>
+
+<p>Or talk about the n'th character:</p>
+
+<p><code>"your name"[3]</code></p>
+
+<p>Array indexing is interesting in Python, so you can do this:</p>
+
+<p><code>"your name"[0:3:1]</code></p>
+
+<p>Where:</p>
+
+<ul>
+<li>0 is the start</li>
+<li>3 is the end</li>
+<li>1 is the step length</li>
+</ul>
+
+<p>What does <code>"your name"[::-1]</code> do?</p>
+
+<p><strong>Things in Python have behaviour defined by Python, by the package it belongs to, and by programs that you write.</strong></p>
+
+<hr>
+
+<h2>
+<a id="task-3---a-graphics-app" class="anchor" href="#task-3---a-graphics-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - A graphics app</h2>
+
+<p>There are lots of graphics packages for Python, </p>
+
+<ul>
+<li>Tkinter is one of the oldest. </li>
+<li><p>The name <code>Tkinter</code> is the Python interface to Tk, a cross-platform graphics toolkit, embedded in many applications, from engineering and design to office applications.</p></li>
+<li>
+<p><em>This is a basic Tkinter template for making a graphics app:</em>*</p>
+
+<ul>
+<li>import the libraries</li>
+<li>create the top level object</li>
+<li>attach a canvas</li>
+<li>draw things</li>
+<li>pack the canvas</li>
+<li>run the mainloop</li>
+</ul>
+</li>
+</ul>
+
+<p><em>Some of the steps may be hidden by the package, but it is useful to keep remembering the basic template</em></p>
+
+<p>Here is some code to make a basic Python pizza:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c"># import libraries</span>
+<span class="pl-k">from</span> Tkinter <span class="pl-k">import</span> <span class="pl-k">*</span> 
+
+<span class="pl-c"># create the top level Tk object</span>
+window<span class="pl-k">=</span>Tk()
+window.title(<span class="pl-s"><span class="pl-pds">"</span>a window<span class="pl-pds">"</span></span>)
+
+<span class="pl-c"># create the canvas</span>
+canvas <span class="pl-k">=</span> Canvas(window, <span class="pl-v">height</span><span class="pl-k">=</span><span class="pl-c1">600</span>, <span class="pl-v">width</span><span class="pl-k">=</span><span class="pl-c1">600</span>)
+
+<span class="pl-c"># draw stuff on the canvas</span>
+<span class="pl-c"># first the pizza base</span>
+canvas.create_oval(<span class="pl-c1">200</span>,<span class="pl-c1">200</span>,<span class="pl-c1">300</span>,<span class="pl-c1">300</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)
+
+<span class="pl-c"># draw some more stuff</span>
+<span class="pl-c"># this might be the tomato sauce toppings</span>
+<span class="pl-c"># now add your cheese and anything else, before we get to the pepperoni</span>
+
+<span class="pl-c"># pack the canvas and run the Tk mainloop</span>
+canvas.pack()
+window.mainloop()</pre></div>
+
+<hr>
+
+<h2>
+<a id="task-4---running-and-saving-your-work" class="anchor" href="#task-4---running-and-saving-your-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4 - Running and saving your work</h2>
+
+<p>Files and IDEs allow you to save your work, and let you run it at the press of a key.</p>
+
+<p>For PyScripter: </p>
 
 <ul>
 <li>
@@ -85,36 +208,34 @@ canvas.mainloop()</pre></div>
 <hr>
 
 <h2>
-<a id="task-4---add-a-base-for-the-pyzza" class="anchor" href="#task-4---add-a-base-for-the-pyzza" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4 - add a base for the pyzza</h2>
+<a id="task-6---things-to-add-to-your-pizza" class="anchor" href="#task-6---things-to-add-to-your-pizza" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 6 - Things to add to your Pizza</h2>
 
 <ul>
-<li>Let's start by making the base
+<li>Making the base
 
 <ul>
-<li>Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right</li>
+<li>Note - the numbers give a bounding box for the oval</li>
 </ul>
 </li>
 </ul>
 
-<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">50</span>,<span class="pl-c1">50</span>,<span class="pl-c1">450</span>,<span class="pl-c1">450</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)
-</pre></div>
+<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">50</span>,<span class="pl-c1">50</span>,<span class="pl-c1">450</span>,<span class="pl-c1">450</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>brown<span class="pl-pds">"</span></span>)</pre></div>
 
 <ul>
-<li>Let's start by putting tomato sauce on the base
+<li>Putting tomato sauce on the base
 
 <ul>
-<li>Note - there is no opacity in a tk canvas</li>
+<li>Note - there is no opacity in a tk canvas, so the layers are important</li>
 </ul>
 </li>
 </ul>
 
-<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">65</span>,<span class="pl-c1">65</span>,<span class="pl-c1">435</span>,<span class="pl-c1">435</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>)
-</pre></div>
+<div class="highlight highlight-source-python"><pre>canvas.create_oval(<span class="pl-c1">65</span>,<span class="pl-c1">65</span>,<span class="pl-c1">435</span>,<span class="pl-c1">435</span>,<span class="pl-v">fill</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>)</pre></div>
 
 <hr>
 
 <h2>
-<a id="task-5---put-all-the-toppings-on" class="anchor" href="#task-5---put-all-the-toppings-on" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 5 - put all the toppings on</h2>
+<a id="task-7---random-toppings" class="anchor" href="#task-7---random-toppings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 7 - Random toppings</h2>
 
 <ul>
 <li>
@@ -130,7 +251,7 @@ canvas.mainloop()</pre></div>
 <div class="highlight highlight-source-python"><pre>colours <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>orange<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>yellow<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>purple<span class="pl-pds">"</span></span>]
 
 <span class="pl-c"># create some pepperoni - random 3 places</span>
-<span class="pl-k">for</span> x <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>,<span class="pl-c1">15</span>):
+<span class="pl-k">for</span> x <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">15</span>):
     rndX <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>,<span class="pl-c1">600</span>)
     rndY <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>,<span class="pl-c1">400</span>)
     rndCol <span class="pl-k">=</span> randint(<span class="pl-c1">0</span>, (<span class="pl-c1">len</span>(colours)<span class="pl-k">-</span><span class="pl-c1">1</span>))
@@ -139,9 +260,27 @@ canvas.mainloop()</pre></div>
 
 <p>Pro Tip - put the drawing things all together and change the magic numbers for variables</p>
 
+<h2>
+<a id="task-8---good-programming-style" class="anchor" href="#task-8---good-programming-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 8 - Good programming style</h2>
+
+<ul>
+<li>To program like a Pythonista
+
+<ul>
+<li>make variables instead of the magic numbers</li>
+</ul>
+</li>
+</ul>
+
 <hr>
 
-<p>Remember to save your file and put it on a memory stick - we will be animating our pyzza next week!</p>
+<p>Remember to save your file and put it on a memory stick - we will be animating our pizza next week!</p>
+
+<p>John Reeves</p>
+
+<p><a href="mailto:john@de-velopment.com">john@de-velopment.com</a>
+<a href="http://www.programming-uk.com">www.programming-uk.com</a>
+<a href="http://www.twitter.com/programming_uk">www.twitter.com/programming_uk</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/JohnReeves/pyzza">Pyzza</a> is maintained by <a href="https://github.com/JohnReeves">JohnReeves</a>.</span>
