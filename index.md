@@ -4,9 +4,9 @@
 
 * one of the top two languages in the world, javascript for the web 'front end', python for everything else (almost). 
   * it is used by NASA, Google, Gimp, Minecraft, and Microsoft Office. 
-* a safety critical project may have a million lines of a C or Ada, and 3 million lines of Python to make sure it is safe!
+* my project has a million lines of Ada & C, and 3 million lines of Python to prove it!
 
-Python can be run from the command line, from an desktop IDE, or from an online IDE. 
+**Python can be run from the command line, from an desktop IDE, or from an online IDE** 
 
 It is useful to try all of them to find out which you prefer.
 
@@ -23,21 +23,22 @@ It is useful to try all of them to find out which you prefer.
 
 ##Task 2 - Batteries included
 
-Everything in Python is an ```object```, with a uniform interface built into the language definition. Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
+**Everything in Python is an ```object```, with a uniform interface.**
 
-You already know about classes and objects, just not in a programming sense: 
-* an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
-  * *you* are an instance of the class `boy` or of the class `girl`. 
+Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
+
+You already know about ```classes``` and ```objects```, just not in a programming sense: 
+  * *you* are an instance of the class `boy` or of the class `girl`, 
   * *you* come with a bunch of attributes that you can do just like every other boy or girl, 
-  * and then there are attributes special to you - which they call ```overriding```.
+  * *you* have attributes special to you - called ```overriding```.
+
+* an object is an instance of a class, where an class is some sort of abstraction of a category of things! 
 
 **You have spent all your life writing and have expectations about what 'strings' can do. **
 
 So, let's play with your name:
 
-```python
-name = "your name"
-```
+```name = "your name"```
 
 **```"your name"``` is a string that we have labelled ```name```**
 
