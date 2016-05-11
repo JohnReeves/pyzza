@@ -1,4 +1,6 @@
-#Python Pyzza worksheet
+#Python Pizza worksheet
+
+***
 
 ##Task 1 - Why Python?
 
@@ -20,22 +22,23 @@ It is useful to try all of them to find out which you prefer.
 
 * Python is now running!
 
+***
 
 ##Task 2 - Batteries included
 
 **Everything in Python is an ```object```, with a uniform interface.**
 
-Which means everything you make comes with functions built in, and anything you might like to try probably has a library to match.
+Which means everything you make comes with functions built in, and anything you might like to try probably has a library to help.
 
 You already know about ```classes``` and ```objects```, just not in a programming sense: 
 * *you* are an instance of the class `boy` or of the class `girl`, 
 * *you* come with a bunch of attributes that you can do just like every other boy or girl, 
-* *you* have attributes special to you - called ```overriding```.
+* and *you* have attributes special to you - called ```overriding```.
   * an object is an instance of a class, where an class is some sort of abstraction of a category of things!
 
-**You have spent all your life writing and have expectations about what Python strings can do.**
+**You have spent all your school life writing and so have expectations about what character strings can do.**
 
-So, let's play with your name:
+Let's play with your name:
 
 ```
 name = "your name"
@@ -43,12 +46,12 @@ name = "your name"
 
 **```"your name"``` is a string that we have labelled ```name```**
 
-as a string object, it comes with methods and attributes:
+As a string object, it comes with methods and attributes:
 ```
 "your name".capitalize()
 ```
 
-gives the same result as 
+Gives the same result as 
 ```
 name.capitalize()
 ```
@@ -59,30 +62,31 @@ You can also count letters:
 len("your name")
 ```
 
-or talk about the n'th character:
+Or talk about the n'th character:
 
 ```"your name"[3]```
 
-array indexing is interesting in python, so you can do this:
+Array indexing is interesting in Python, so you can do this:
 
 ```"your name"[0:3:1]```
 
-where:
+Where:
 * 0 is the start
 * 3 is the end
 * 1 is the step length
 
-but what does ```"your name"[::-1]``` do?
+What does ```"your name"[::-1]``` do?
 
 
-*Things in Python have behaviour defined by Python, by the package it belongs to, and by programs that you write.*
+**Things in Python have behaviour defined by Python, by the package it belongs to, and by programs that you write.**
 
+***
 
 ##Task 3 - A graphics app
 
-There are lots of graphics packages for python, 
+There are lots of graphics packages for Python, 
 * Tkinter is one of the oldest. 
-* The name ```Tkinter``` is the python interface to Tk, a cross-platform graphics toolkit, embedded in many applications, from engineering and design to office applications.
+* The name ```Tkinter``` is the Python interface to Tk, a cross-platform graphics toolkit, embedded in many applications, from engineering and design to office applications.
 
 * *This is a basic Tkinter template for making a graphics app:**
   * import the libraries
@@ -93,6 +97,8 @@ There are lots of graphics packages for python,
   * run the mainloop
 
 *Some of the steps may be hidden by the package, but it is useful to keep remembering the basic template*
+
+Here is some code to make a basic Python pizza:
 
 ```python
 # import libraries
@@ -108,6 +114,7 @@ canvas = Canvas(window, height=600, width=600)
 # draw stuff on the canvas
 # first the pizza base
 canvas.create_oval(200,200,300,300,fill="brown")
+
 # draw some more stuff
 # this might be the tomato sauce toppings
 # now add your cheese and anything else, before we get to the pepperoni
@@ -117,7 +124,13 @@ canvas.pack()
 window.mainloop()
 ```
 
+***
+
 ##Task 4 - Running and saving your work
+
+Files and IDEs allow you to save your work, and let you run it at the press of a key.
+
+For PyScripter: 
 
 * click *run* at the top left - did you get what you expected?
   * press this every time you want to see what your code does 
@@ -127,6 +140,7 @@ window.mainloop()
   * the first time you will need to give a file name
   * save the file to a memory stick if you need to transport it
 
+***
 
 ##Task 6 - Things to add to your Pizza
 
@@ -166,6 +180,11 @@ for x in range(15):
 ```
 
 Pro Tip - put the drawing things all together and change the magic numbers for variables
+
+##Task 8 - Good programming style
+
+* To program like a Pythonista
+  * make variables instead of the magic numbers
 
 ***
 
