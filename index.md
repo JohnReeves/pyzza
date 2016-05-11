@@ -75,7 +75,7 @@ where:
 but what does ```"your name"[::-1]``` do?
 
 
-# so, things in python have behaviour defined by Python itself, perhaps by the package it belongs to, and by programs that you write.
+*Things in Python have behaviour defined by Python, by the package it belongs to, and by programs that you write.*
 
 
 ##Task 3 - A graphics app
@@ -92,81 +92,61 @@ There are lots of graphics packages for python,
   * pack the canvas
   * run the mainloop
 
-**ome of the steps may be hidden by the package, but it is useful to keep remembering the basic template**
+*Some of the steps may be hidden by the package, but it is useful to keep remembering the basic template*
 
 ```python
 # import libraries
 from Tkinter import * 
-```
-```python
+
 # create the top level Tk object
 window=Tk()
 window.title("a window")
-```
-```python
+
 # create the canvas
 canvas = Canvas(window, height=600, width=600)
-```
-
-```python
-# pizza things will go here
 
 # draw stuff on the canvas
+# first the pizza base
 canvas.create_oval(200,200,300,300,fill="brown")
+# draw some more stuff
+# this might be the tomato sauce toppings
+# now add your cheese and anything else, before we get to the pepperoni
 
-# this might be the base of the pizza
-```
-
-```python
 # pack the canvas and run the Tk mainloop
 canvas.pack()
 window.mainloop()
 ```
 
-```python
-# draw some more stuff
-canvas.create_oval(200,200,300,300,fill="brown")
-
-# this might be the tomato sauce toppings
-# now add your cheese and anything else, before we get to the pepperoni
-```
-
-***
-
-##Task 5 - run and save your work
+##Task 4 - Running and saving your work
 
 * click *run* at the top left - did you get what you expected?
   * press this every time you want to see what your code does 
   * this should then appear in modal form labelled 'Tk'
 
-
 * click *save* at the top left - no URL this time :/
   * the first time you will need to give a file name
   * save the file to a memory stick if you need to transport it
 
-***
 
-##Task 6 - add a base for the PyZza
+##Task 6 - Things to add to your Pizza
 
-* Let's start by making the base
+* Making the base
   * Note - the numbers give a bounding box for the oval
 
 ```python
 canvas.create_oval(50,50,450,450,fill="brown")
-
 ```
   
-* Let's start by putting tomato sauce on the base
+* Putting tomato sauce on the base
   * Note - there is no opacity in a tk canvas, so the layers are important
 
 ```python
 canvas.create_oval(65,65,435,435,fill="red")
-
 ```
 
 ***
 
-##Task 7 - put all the toppings on
+##Task 7 - Random toppings
 
 * look up what other toppings, we can have more shapes and colours
   * http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html
@@ -189,7 +169,7 @@ Pro Tip - put the drawing things all together and change the magic numbers for v
 
 ***
 
-Remember to save your file and put it on a memory stick - we will be animating our pyzza next week!
+Remember to save your file and put it on a memory stick - we will be animating our pizza next week!
 
 
  
