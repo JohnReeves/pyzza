@@ -22,6 +22,8 @@ It is useful to try all of them to find out which you prefer.
 
 * Python is now running!
 
+[Imgur](http://i.imgur.com/Pjii5Qo.png)
+
 ***
 
 ##Task 2 - Batteries included
@@ -61,6 +63,8 @@ You can also count letters:
 ```
 len("your name")
 ```
+
+[Imgur](http://i.imgur.com/NKvo0HG.png)
 
 Or talk about the n'th character:
 
@@ -124,13 +128,15 @@ canvas.pack()
 window.mainloop()
 ```
 
+[Imgur](http://i.imgur.com/Zmr8WLb.png)
+
 ***
 
 ##Task 4 - Running and saving your work
 
 Files and IDEs allow you to save your work, and let you run it at the press of a key.
 
-For PyScripter: 
+Remember to test and save your work after every change!
 
 * click *run* at the top left - did you get what you expected?
   * press this every time you want to see what your code does 
@@ -186,6 +192,13 @@ Pro Tip - put the drawing things all together and change the magic numbers for v
 * To program like a Pythonista
   * make variables instead of the magic numbers
 
+This is what my code looks like:
+[Imgur](http://i.imgur.com/H2i5eBA.png)
+
+I added another variable to count the number of hits on the pizza base, because it's a really cool way of calculating pi.
+
+(http://www.smac.lps.ens.fr/index.php/Program:Direct_pi)
+
 ***
 
 Remember to save your file and put it on a memory stick - we will be animating our pizza next week!
@@ -194,6 +207,6 @@ Remember to save your file and put it on a memory stick - we will be animating o
  
 John Reeves
 
-john@de-velopment.com
-www.programming-uk.com
-www.twitter.com/programming_uk
+* john@de-velopment.com
+* www.programming-uk.com
+* www.twitter.com/programming_uk
