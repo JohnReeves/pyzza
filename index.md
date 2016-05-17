@@ -64,7 +64,7 @@ You can also count letters:
 len("your name")
 ```
 
-[Imgur](http://i.imgur.com/NKvo0HG.png)
+![Imgur](http://i.imgur.com/NKvo0HG.png)
 
 Or talk about the n'th character:
 
@@ -128,7 +128,7 @@ canvas.pack()
 window.mainloop()
 ```
 
-[Imgur](http://i.imgur.com/Zmr8WLb.png)
+![Imgur](http://i.imgur.com/Zmr8WLb.png)
 
 ***
 
@@ -193,7 +193,7 @@ Pro Tip - put the drawing things all together and change the magic numbers for v
   * make variables instead of the magic numbers
 
 This is what my code looks like:
-[Imgur](http://i.imgur.com/H2i5eBA.png)
+![Imgur](http://i.imgur.com/H2i5eBA.png)
 
 I added another variable to count the number of hits on the pizza base, because it's a really cool way of calculating pi.
 
