@@ -22,7 +22,7 @@ It is useful to try all of them to find out which you prefer.
 
 * Python is now running!
 
-[Imgur](http://i.imgur.com/Pjii5Qo.png)
+![Imgur](http://i.imgur.com/Pjii5Qo.png)
 
 ***
 
