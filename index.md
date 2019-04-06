@@ -1,7 +1,7 @@
-#Python Pizza worksheet
+# Python Pizza worksheet
 
 
-##Task 1 - Why Python?
+## Task 1 - Why Python?
 
 * one of the top two languages in the world, javascript for the web 'front end', python for everything else (almost). 
   * it is used by NASA, Google, Gimp, Minecraft, and Microsoft Office. 
@@ -25,7 +25,7 @@ It is useful to try all of them to find out which you prefer.
 
 ***
 
-##Task 2 - Batteries included
+## Task 2 - Batteries included
 
 **Everything in Python is an ```object```, with a uniform interface.**
 
@@ -85,7 +85,7 @@ What does ```"your name"[::-1]``` do?
 
 ***
 
-##Task 3 - A graphics app
+## Task 3 - A graphics app
 
 There are lots of graphics packages for Python, 
 * Tkinter is one of the oldest. 
@@ -131,7 +131,7 @@ window.mainloop()
 
 ***
 
-##Task 4 - Running and saving your work
+## Task 4 - Running and saving your work
 
 Files and IDEs allow you to save your work, and let you run it at the press of a key.
 
@@ -147,7 +147,7 @@ Remember to test and save your work after every change!
 
 ***
 
-##Task 6 - Things to add to your Pizza
+## Task 5 - Things to add to your Pizza
 
 * Making the base
   * Note - the numbers give a bounding box for the oval
@@ -165,7 +165,7 @@ canvas.create_oval(65,65,435,435,fill="red")
 
 ***
 
-##Task 7 - Random toppings
+## Task 6 - Random toppings
 
 * look up what other toppings, we can have more shapes and colours
   * http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html
@@ -183,8 +183,9 @@ for x in range(15):
     canvas.create_oval(rndX,rndY,rndX+50,rndY+50,fill=colours[rndCol])
 
 ```
+***
 
-##Task 8 - Good programming style
+## Task 7 - Good programming style
 
 * To program like a Pythonista
   * make variables instead of the magic numbers
