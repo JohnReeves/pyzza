@@ -11,7 +11,7 @@ Python can be run from:
 * the command line, from an desktop IDE, or 
 * from an online IDE such as www.repl.it .
 
-Open repl.it in a new tab repl.it/languages/Python
+Open repl.it in a new tab [repl.it/languages/Python](http://repl.it/languages/Python)
 
 It is useful to try all of them to find out which you prefer.
 
