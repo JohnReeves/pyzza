@@ -7,9 +7,9 @@
   * it is used by NASA, Google, Gimp, Minecraft, and Microsoft Office. 
 * my project has a million lines of Ada & C, and 3 million lines of Python to prove it!
 
-**Python can be run from:
-#the command line, from an desktop IDE, or 
-#from an online IDE such as www.repl.it .
+Python can be run from:
+* the command line, from an desktop IDE, or 
+* from an online IDE such as www.repl.it .
 
 Open repl.it in a new tab repl.it/languages/Python
 
